@@ -9,4 +9,4 @@ Arduino 01_Arduino/02_4_SerialSendToPC 와 같이 동작하는 코드입니다.
 생각해보기
 -----
 Processing 에 사용된 함수중 myPort.readStringUntil() 부분을 유의해서 살펴보기 바랍니다.
--
+
