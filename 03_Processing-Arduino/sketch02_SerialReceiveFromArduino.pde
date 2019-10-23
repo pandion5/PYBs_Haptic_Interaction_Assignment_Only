@@ -10,7 +10,7 @@ void setup() {
   
   // Open the port you are using at the rate you want:
   //myPort = new Serial(this, Serial.list()[0], 9600);
-  myPort = new Serial(this, Serial.list()[Serial.list().length - 1], 9600);
+  myPort = new Serial(this, Serial.list()[Serial.list().length - 1], 9600); //포트 설정하기(리스트중 첫번째)
   
   val1 = 0;
 }
@@ -27,7 +27,7 @@ void draw() {
   while (myPort.available() > 0) 
   {
     String str1  = myPort.readStringUntil(lf);//myPort.readString();
-    
+    //아두이노에서 값을 받아온다.
     if (str1 != null) 
     {
       val1 = float(str1);
